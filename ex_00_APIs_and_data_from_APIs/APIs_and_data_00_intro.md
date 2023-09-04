@@ -41,3 +41,25 @@ portfolioItems() {
     });
   }
 ```
+
+The universal JS tool to find out the keys of an object, since that will be the most common need that we will encounter, is `object.keys(item-in-question)`. This will output only the keys so we can identify them and use them.
+
+After extracting the keys, the best practice would be to do what it's called **destructuring**, or to extact the keys of an object into vars.
+
+In our example, where we are looping through each object extracted from the API using .map(), we can add the destructurer into the loop to extract the keys and use them as normal vars in our code. To achieve that, first we need to know the names of the keys, using some of the methods learned, and then we use them like this, in our case:
+
+```
+const { id, description, thumb_image_url, logo } = props.item;
+```
+
+After doing this, we can use the elements as vars:
+
+``` 
+
+```
+
+## React Dev Tools method
+
+React dev tools can be opened from one of the inspect tabs and it will allow us to visualize some specific react elements, like: props, the parent-child component relationships...
+
+There you can click on the specific element and it will showcase the object stored in the component.
