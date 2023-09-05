@@ -19,3 +19,20 @@ In react we create the html from the components, writting stuff in the shape of 
 Bear in mind that "class" is a react keyword, and that we should use **className**.
 
 The styles in the scss are applied normally.
+
+The styles, if applied inline, are applied differently in JSX. instead of 
+
+```
+style="color:blue;font-size:46px;
+```
+
+we do: 
+
+```
+style={{
+    backgroundImage: "url(" + thumb_image_url + ")"
+}}
+
+```
+
+It's just important to remember that JSX styles have a different syntax to scss, and to switch from one to the other.
