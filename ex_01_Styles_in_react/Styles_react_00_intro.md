@@ -8,6 +8,8 @@ This will be the way picked by the course.
 
 We'll go to the **src/style** folder of the react project and we will find _main.scss_. We will use it as our foundation file where we will import all other files. Being so, we will take all the code in it and store it in another file, that we will call _base.scss_. Then we will import base into main with; `@import "./base.scss";`
 
+It is also very important to set the import statements correctly. CSS is casding, so we want the more general files (variables, mixins...) on the top and the more specific in the bottom. Otherwise we'll get errors.
+
 ## Importing elements to HTML
 
 If you want to import stuff into the HTML, such us fonts, it should be done into the **index.html** file.
