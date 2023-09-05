@@ -63,3 +63,4 @@ After doing this, we can use the elements as vars:
 React dev tools can be opened from one of the inspect tabs and it will allow us to visualize some specific react elements, like: props, the parent-child component relationships...
 
 There you can click on the specific element and it will showcase the object stored in the component.
+

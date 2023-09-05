@@ -38,3 +38,7 @@ style={{
 ```
 
 It's just important to remember that JSX styles have a different syntax to scss, and to switch from one to the other.
+
+## Import Elements From static
+
+Images, icons and so on from static are going to be imported the usual way, you just need to apply the correct path from the folder where it is. 
