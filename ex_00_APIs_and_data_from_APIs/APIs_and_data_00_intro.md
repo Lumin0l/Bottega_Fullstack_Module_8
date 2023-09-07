@@ -54,7 +54,7 @@ const { id, description, thumb_image_url, logo } = props.item;
 
 After doing this, we can use the elements as vars:
 
-``` 
+```
 
 ```
 
@@ -64,3 +64,12 @@ React dev tools can be opened from one of the inspect tabs and it will allow us 
 
 There you can click on the specific element and it will showcase the object stored in the component.
 
+## Axios
+
+It will always follow a certain structure of mandatory elements:
+
+- The url to the API
+- The HTTP method: GET, POST, PUT, PATCH, DELETE
+- The promise and it's error catch.
+
+## 
