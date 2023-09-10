@@ -48,3 +48,25 @@ handleSubmit(event) {
             onChange={this.handleChange}
           />
 ```
+
+## Images
+
+When working with images through forms we need to take different approaches, because images are composed of different data.
+
+One approach we can get is creating an object in which we append the elements so the text based data is in one block, and the image based data in another:
+
+```
+completeDataObject = {
+	textData {
+		name: "xxxx",
+		url: "yyyy",
+		...
+	}
+
+	imgData {
+		...
+	}
+}
+```
+
+That way we can pass all at once to the API.
