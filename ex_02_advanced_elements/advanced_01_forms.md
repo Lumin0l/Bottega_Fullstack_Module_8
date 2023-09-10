@@ -56,6 +56,17 @@ When working with images through forms we need to take different approaches, bec
 One approach we can get is creating an object in which we append the elements so the text based data is in one block, and the image based data in another:
 
 ```
+// Object Builder:
+buildForm() {
+  let formData = new FormData();
+
+  formData.append("portfolio_item[name]", this.state.name);
+  formData.append("portfolio_item[desccription]", this.state.desccription);
+  formData.append("portfolio_item[url]", this.state.url);
+  formData.append("portfolio_item[category]", this.state.category);
+}
+
+// Created Object:
 completeDataObject = {
 	textData {
 		name: "xxxx",
@@ -70,3 +81,20 @@ completeDataObject = {
 ```
 
 That way we can pass all at once to the API.
+
+## Send form content to API
+
+In the API we will need to find a POST verb url and create another axios that sends the object we created. Like this:
+
+```
+handleSubmit(event) {
+
+  axios.post(
+    "https://jordan.devcamp.space/portfolio/portfolio_items",
+    this.buildForm(),
+    { withCredentials: true}
+  );
+
+  event.preventDefault();
+}
+```
