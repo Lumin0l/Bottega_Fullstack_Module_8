@@ -72,4 +72,6 @@ It will always follow a certain structure of mandatory elements:
 - The HTTP method: GET, POST, PUT, PATCH, DELETE
 - The promise and it's error catch.
 
-## 
+## Checking if the API works
+**Postman**
+**Insomnia**
